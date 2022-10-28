@@ -9,8 +9,6 @@ createApp ({
             onLoading: ""
         }
 
-        
-
     },
 
     methods : {
@@ -27,14 +25,9 @@ createApp ({
                 .get("https://flynn.boolean.careers/exercises/api/random/mail")
                 .then((resp) => {
 
-
-                    
                     this.mailList.push(resp.data.response);
-                    console.log(resp.data.response);
-
+                    
                 });
-
-                console.log(this.mailList);
             
             }
         
