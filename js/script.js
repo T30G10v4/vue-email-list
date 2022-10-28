@@ -5,14 +5,21 @@ createApp ({
     data(){
 
         return {
-            mailList: []
+            mailList: [],
+            onLoading: ""
         }
+
+        
 
     },
 
     methods : {
 
         showEmails() {
+
+            if(this.mailList.length !== 0) this.mailList = [];
+
+            this.onLoading = "Caricamento in corso...";
 
             for(let i = 0; i < 10; i++) {
             

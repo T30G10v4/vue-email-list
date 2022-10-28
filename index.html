@@ -39,6 +39,7 @@
 
     <ul>
       <li v-if="mailList.length >= 10" v-for="(mail, index) in mailList">{{ mailList[index] }}</li>
+      <li v-else="">{{ onLoading }}</li>
     </ul>
 
 
